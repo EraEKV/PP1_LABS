@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {    
+    int n, x; cin >> n;
+    int a[n];
+    for(int i = 0; i < n; i++)  {
+        cin >> a[i];
+    }
+    cin >> x;
+    for(auto e : a) {
+        if(e == x) {
+            cout << "Yes";
+            return 0;
+        }
+    }
+    cout << "No";
+    return 0;
+}
